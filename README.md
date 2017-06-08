@@ -1,3 +1,3 @@
 # python
 
-just do some test.
+Just do some test.
