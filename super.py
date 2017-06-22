@@ -45,5 +45,14 @@ print(D.__mro__)
 	所以，super(B,self).__init__() == A.__init__()
 		  super(C,self).__init__() == B.__init__() > A.__init__()
 		  super(D,self).__init__() == C.__init__() > B.__init__() > A.__init__()
+		  
+	super(D,self).__init__() 的执行实际是：
+		print("in C")
+			print("in B")
+				print("in A")
+				print("out A")
+			print("out B")
+		print("out C")
+	
 """
 	
