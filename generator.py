@@ -14,8 +14,9 @@ def consumer():
         
 
 def producer(c):
-    r2 = c.send(None)     #首次启动生成器，只能传None，consumer会把 r 返回
-    print(r2)
+    #r2 = c.send(None)     #首次启动生成器，只能传None，consumer会把 r 返回
+    #print(r2)
+    next(c)                # 这句作用同 c.send(None)
     print('babababab\n')
     m = 1
     while m < 6:
