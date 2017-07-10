@@ -23,7 +23,7 @@ def consumer(coro):
 
 ####### 类似于以下逻辑(实质怎样不知，所以只能说类似)
 """
-def consumer(coro,):
+def consumer(coro):
     print("consumer 1 ...")
     w = ''
     coro.send(None)
